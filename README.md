@@ -14,6 +14,7 @@ Rails 5 on the Google App Engine flexible environment
 
 * Database Migration: bundle exec rake appengine:exec -- bundle exec rake db:migrate
 
-
 * Website URL: https://single-cycling-180318.appspot.com/
+
+* Git: https://github.com/luonghuy24/appengine_example
 
