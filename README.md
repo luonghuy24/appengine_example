@@ -1,4 +1,6 @@
-# README
+# Nguyen Luong Huy - 300913455
+ * Asignment 1 + 2
+ * API Engineering & Cloud Comp (SEC. 002)
 
 Rails 5 on the Google App Engine flexible environment
 
@@ -13,5 +15,5 @@ Rails 5 on the Google App Engine flexible environment
 * Database Migration: bundle exec rake appengine:exec -- bundle exec rake db:migrate
 
 
-* WEBSITE URL: https://single-cycling-180318.appspot.com/
+* Website URL: https://single-cycling-180318.appspot.com/
 
