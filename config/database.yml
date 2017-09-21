@@ -21,5 +21,15 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: postgresql
+  pool: 5
+  timeout: 5000
+  username: "postgres"
+  password: "appengine123"
+  database: "appengine_production"
+  host:   "/cloudsql/single-cycling-180318:us-east1:appengine"
+
+
+
+# appengine123
