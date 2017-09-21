@@ -1,0 +1,33 @@
+= simple_form_for(@order, html: { class: 'form-horizontal' }) do |f|
+  .row
+    .col-md-6.mb-3
+      = f.input :first_name, placeholder: 'First Name'
+    .col-md-6.mb-3
+      = f.input :last_name, placeholder: 'Last Name'
+  .row
+    .col-md-6.mb-3
+      = f.input :city, placeholder: 'City'
+    .col-md-3.mb-3
+      = f.input :postal_code, placeholder: 'Postal Code'
+    .col-md-3.mb-3
+      = f.input :province, collection: Order::PROVINCES
+  .row
+    .col-md-6.mb-3
+      = f.input :phone_number, placeholder: 'Phone Number'
+    .col-md-6.mb-3
+      = f.input :email, placeholder: 'Email'
+
+  = f.input :order_type, as: :radio_buttons, collection: ["Delivery", "Pick-Up"]
+  .order
+    strong Order
+    hr/
+    .row
+      .col-md-6
+        = f.input :food, as: :radio_buttons, collection: Order::FOOD
+      .col-md-6
+        = f.input :drink, as: :radio_buttons, collection: Order::DRINKS
+    = f.input :comment, as: :text ,label: 'Special Instructions', input_html: {rows: 3}
+  = f.submit "Submit Form", class: "btn btn-success", style: "margin-top:30px"
+
+  - unless @order.persisted?
+    = f.submit "Remember Me?", class: "btn btn-default", style: 'margin-left: 20px;margin-top:30px'

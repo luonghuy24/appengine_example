@@ -34,5 +34,3 @@ production:
   password: "appengine123"
   database: "appengine_production"
   host:   "/cloudsql/single-cycling-180318:us-east1:appengine"
-
-
