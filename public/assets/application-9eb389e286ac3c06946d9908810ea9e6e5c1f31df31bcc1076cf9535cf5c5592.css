@@ -1,0 +1,94 @@
+/* line 5, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* line 16, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.banner {
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+/* line 22, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.order {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* line 29, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.radio, .checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 37, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.radio label, .checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* line 45, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px;
+}
+
+/* line 51, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.radio label, .checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* line 60, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.inline-radio-btns span.radio {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* line 69, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.order .row.radio-btns span.radio label {
+  padding-left: 0px;
+}
+/* line 71, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.order .row.radio-btns span.radio label img {
+  display: block;
+  width: 100%;
+}
+/* line 74, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.order .row.radio-btns span.radio label input {
+  margin-left: 0px;
+}
+/* line 77, /Users/luonghuy24/Documents/rails_projects/getting-started-ruby/appengine_example/app/assets/stylesheets/welcome.scss */
+.order .row.radio-btns span.radio label span.text {
+  margin-left: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
