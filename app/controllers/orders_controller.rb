@@ -11,7 +11,7 @@ class OrdersController < ApplicationController
         if @order.present?
           render 'edit'
         else
-          flash[:warning] = "You have not made any order!"
+          flash[:warning] = "User not found!"
           redirect_to root_path
         end
       else

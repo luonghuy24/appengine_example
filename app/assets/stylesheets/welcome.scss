@@ -7,11 +7,11 @@ body {
   padding-bottom: 1.5rem;
 }
 
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
-}
+// @media (min-width: 48em) {
+//   .container {
+//     max-width: 46rem;
+//   }
+// }
 
 .banner {
   width: 100%;
@@ -54,4 +54,30 @@ body {
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
+}
+
+.inline-radio-btns {
+  span.radio {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+.order {
+  .row.radio-btns {
+    span.radio {
+      label {
+        padding-left: 0px;
+        img {
+          display:block; width:100%
+        }
+        input {
+          margin-left: 0px;
+        }
+        span.text {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 }

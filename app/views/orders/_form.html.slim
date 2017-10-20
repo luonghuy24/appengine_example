@@ -1,31 +1,52 @@
 = simple_form_for(@order, html: { class: 'form-horizontal' }) do |f|
   .row
-    .col-md-6.mb-3
+    .col-md-3
       = f.input :first_name, placeholder: 'First Name'
-    .col-md-6.mb-3
+    .col-md-3
       = f.input :last_name, placeholder: 'Last Name'
-  .row
-    .col-md-6.mb-3
-      = f.input :city, placeholder: 'City'
-    .col-md-3.mb-3
-      = f.input :postal_code, placeholder: 'Postal Code'
-    .col-md-3.mb-3
-      = f.input :province, collection: Order::PROVINCES
-  .row
-    .col-md-6.mb-3
-      = f.input :phone_number, placeholder: 'Phone Number'
-    .col-md-6.mb-3
+    .col-md-3
       = f.input :email, placeholder: 'Email'
-
-  = f.input :order_type, as: :radio_buttons, collection: ["Delivery", "Pick-Up"]
+  .row
+    .col-md-3
+      = f.input :phone_number, placeholder: 'Phone Number'
+    .col-md-3
+      = f.input :city, placeholder: 'City'
+    .col-md-3
+      = f.input :postal_code, placeholder: 'Postal Code'
+    .col-md-3
+      = f.input :province, collection: Order::PROVINCES
+  .inline-radio-btns
+    = f.input :order_type, as: :radio_buttons, collection: ["Delivery", "Pick-Up"]
   .order
     strong Order
-    hr/
-    .row
-      .col-md-6
-        = f.input :food, as: :radio_buttons, collection: Order::FOOD
-      .col-md-6
-        = f.input :drink, as: :radio_buttons, collection: Order::DRINKS
+    hr
+    .form-group.radio_buttons_required
+      label.control-label.radio_buttons.required Food
+      .row.radio-btns
+        - Order::FOOD.each do |food|
+          .col-md-2
+            span.radio
+              label
+                = image_tag "#{food.downcase}.png", class: 'rounded border border-dark'
+                - if @order.food == food
+                  input.radio_buttons.required name="order[food]" type="radio" value="#{food}" checked="checked"
+                - else
+                  input.radio_buttons.required name="order[food]" type="radio" value="#{food}"
+                span.text= food
+    .form-group.radio_buttons_required
+      label.control-label.radio_buttons.required Food
+      .row.radio-btns
+        - Order::DRINKS.each do |drink|
+          .col-md-2
+            span.radio
+              label
+                = image_tag "#{drink.downcase}.png", class: 'rounded border border-dark'
+                - if @order.drink == drink
+                  input.radio_buttons.required checked="checked" name="order[drink]" type="radio" value="#{drink}"
+                - else
+                  input.radio_buttons.required name="order[drink]" type="radio" value="#{drink}"
+                span.text= drink
+
     = f.input :comment, as: :text ,label: 'Special Instructions', input_html: {rows: 3}
   = f.submit "Submit Form", class: "btn btn-success", style: "margin-top:30px"
 

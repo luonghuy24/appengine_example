@@ -25,6 +25,6 @@ class Order < ApplicationRecord
   PROVINCES = ["Ontario", "Quebec", "Nova Scotia", "New Brunswick", "Manitoba",
                 "British Columbia", "Prince Edward Island", "Saskatchewan",
                 "Alberta", "Newfoundland and Labrador"]
-  DRINKS    = ["Water", "Cocacola", "Pepsi", "Green Tea", "Cafe", "Red Bull"]
-  FOOD      = ["Fries", "Chicken Wings", "Poutine", "Pho", "Fried Rice", "Burger"]
+  DRINKS    = ["Water", "Cocacola", "Pepsi", "Sprite", "Cafe", "Redbull"]
+  FOOD      = ["Fries", "Chicken", "Poutine", "Pho", "Beef", "Burger"]
 end
