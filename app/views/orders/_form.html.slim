@@ -1,4 +1,4 @@
-= simple_form_for(@order, html: { class: 'form-horizontal' }) do |f|
+= simple_nested_form_for(@order, html: { class: 'form-horizontal' }) do |f|
   .row
     .col-md-3
       = f.input :first_name, placeholder: 'First Name'
@@ -48,6 +48,19 @@
                 span.text= drink
 
     = f.input :comment, as: :text ,label: 'Special Instructions', input_html: {rows: 3}
+    hr
+    #feeback-form
+      = f.simple_fields_for :feedbacks do |g|
+        = g.input :comment, as: :text, label: false, placeholder: 'Your description'
+        .row.bottom-bar
+          .col-md-2
+            - if g.object.image.present?
+              = image_tag g.object.image.url, style: "width: 150px"
+          .col-md-10
+            = g.input :image, as: :file
+            = g.link_to_remove "Remove this feedback", class: 'btn btn-info'
+      = f.link_to_add "Add a feedback", :feedbacks, class: 'btn btn btn-success'
+
   = f.submit "Submit Form", class: "btn btn-success", style: "margin-top:30px"
 
   - unless @order.persisted?

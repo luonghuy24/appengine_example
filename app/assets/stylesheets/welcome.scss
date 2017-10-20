@@ -81,3 +81,25 @@ body {
     }
   }
 }
+
+#feeback-form {
+  .fields {
+    margin-bottom: 10px;
+  }
+  .order_feedbacks_comment {
+    margin-bottom: 0px;
+    .textarea {
+      border-radius: 0.25em 0.25em 0 0;
+    }
+  }
+  .bottom-bar {
+    border-radius: 0 0 0.25em 0.25em;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 15px 0px;
+    background-color: rgba(206, 206, 206, 0.69);
+    img {
+      width: 100%;
+    }
+  }
+}

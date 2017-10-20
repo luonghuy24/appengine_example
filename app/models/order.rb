@@ -22,6 +22,11 @@ class Order < ApplicationRecord
   validates :first_name, :last_name, :city, :postal_code, :order_type,
             :food, :drink, :email, :phone_number, presence: true
 
+  has_many :feedbacks
+  accepts_nested_attributes_for :feedbacks, allow_destroy: true,
+    reject_if: proc { |attributes| attributes['comment'].blank? && attributes['image'].blank? }
+
+
   PROVINCES = ["Ontario", "Quebec", "Nova Scotia", "New Brunswick", "Manitoba",
                 "British Columbia", "Prince Edward Island", "Saskatchewan",
                 "Alberta", "Newfoundland and Labrador"]
