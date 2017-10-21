@@ -12,6 +12,9 @@ gem 'simple_form'
 gem 'pry'
 gem 'carrierwave', '~> 1.0'
 gem 'nested_form'
+gem "fog-google"
+gem "google-api-client", "> 0.8.5", "< 0.9"
+gem "mime-types"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
