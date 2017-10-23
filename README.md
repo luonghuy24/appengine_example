@@ -1,5 +1,5 @@
 # Nguyen Luong Huy - 300913455
- * Asignment 1 + 2
+ * Asignment 3
  * API Engineering & Cloud Comp (SEC. 002)
 
 Rails 5 on the Google App Engine flexible environment
@@ -10,11 +10,7 @@ Rails 5 on the Google App Engine flexible environment
 
 * Database: Google Cloud SQL for PostgresSQL
 
-* Deployment instructions: gcloud app deploy
-
-* Database Migration: bundle exec rake appengine:exec -- bundle exec rake db:migrate
-
-* Website URL: https://single-cycling-180318.appspot.com/
+* Storate: Google Cloud Storage
 
 * Git: https://github.com/luonghuy24/appengine_example
 
