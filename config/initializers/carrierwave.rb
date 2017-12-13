@@ -9,5 +9,5 @@ CarrierWave.configure do |config|
     google_storage_secret_access_key: '7TgEFPGu7zQJAnX9pQdEUUwLMT4msSSVWKzTrin+'
   }
   config.storage = :fog
-  config.fog_directory = 'test1234232134'
+  config.fog_directory = 'nguyenluonghuy300913455.appspot.com'
 end
